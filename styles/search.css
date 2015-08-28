@@ -1,0 +1,42 @@
+body{
+    font-family: sans-serif;
+}
+#main_container{
+    padding: 2em;
+}
+#main_container h1, #main_container input[type=text]{
+    display: block;
+}
+h1{
+    font-size: 1.5em;
+    margin: 0.75em auto;
+    font-weight: bold;
+    text-align: center;
+}
+input[type=text]{
+    width: 15em;
+    margin: 0 auto;
+    padding: 0.5em;
+    border: 0.12em solid gray;
+    border-radius: 0.5em;
+}
+ul{
+    list-style-type: none;
+}
+.name_li{
+    font-weight: bold;
+}
+.url_li{
+    margin-bottom: 0.75em;
+}
+ul li:nth-child(2n+1){
+    background-color: aliceblue;
+}
+@keyframes nodeInserted {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+#searchResults ul > li {
+    animation: 0.5s ease forward;
+    animation-name: nodeInserted;
+}
